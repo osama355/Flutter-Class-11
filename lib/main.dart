@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_class_11/calculator.dart';
 import 'package:flutter_class_11/grid.dart';
+import 'package:flutter_class_11/todo_list.dart';
 
 import 'home.dart';
 
@@ -18,15 +19,19 @@ class MyApp extends StatelessWidget {
       home: Center(
         child: Scaffold(
           appBar: AppBar(
-            backgroundColor: Colors.blue,
-            title: Text(
-              'Calculator App',
-              style: TextStyle(color: Colors.white),
-            ),
+            title: Text('Todo App'),
           ),
+          // appBar: AppBar(
+          //   backgroundColor: Colors.blue,
+          //   title: Text(
+          //     'Calculator App',
+          //     style: TextStyle(color: Colors.white),
+          //   ),
+          // ),
           // body: Home(),
           // body: GridTpoic(),
-          body: Calculator(),
+          // body: Calculator(),
+          body: TodoApp(),
         ),
       ),
     );
